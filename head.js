@@ -4,7 +4,7 @@ const assertEqual = function (actual, expected) {
     return actual === expected;
 };
 
-// TEST CODE
-console.assert(assertEqual("Lighthouse Labs", "Bootcamp"));
-console.assert(assertEqual(1, 1));
+const head = arr => arr ? arr[0] : undefined;
 
+assertEqual(head([5, 6, 7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
