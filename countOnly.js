@@ -1,6 +1,7 @@
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 const assertEqual = function (actual, expected) {
+    // compare arrays
     if (actual !== undefined && actual.length) {
         for (var i = 0; i < actual.length; i++) {
             if (actual[i] !== expected[i]) {
@@ -10,6 +11,7 @@ const assertEqual = function (actual, expected) {
         };
         return true;
     };
+    // compare primitive vals
     if (actual === expected) console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
     else console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
     return actual === expected;
