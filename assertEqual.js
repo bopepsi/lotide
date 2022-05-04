@@ -1,13 +1,14 @@
-const assertEqual = function (actual, expected) {
-    if (actual.length) {
-        for (var i = 0; i < actual.length; i++) {
-            if (actual[i] !== expected[i]) {
-                console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-                return false;
-            }
-        };
-        return true;
-    };
+ const assertEqual = function (actual, expected) {
+    // Check arrays, but not when actual is null or undefined
+    //  if (actual !== undefined && actual.length) {
+    //      for (var i = 0; i < actual.length; i++) {
+    //          if (actual[i] !== expected[i]) {
+    //              console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
+    //              return false;
+    //          }
+    //      };
+    //      return true;
+    //  };
     if (actual === expected) console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
     else console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
     return actual === expected;
@@ -16,4 +17,3 @@ const assertEqual = function (actual, expected) {
 // TEST CODE
 console.assert(assertEqual("Lighthouse Labs", "Bootcamp"));
 console.assert(assertEqual(1, 1));
-
