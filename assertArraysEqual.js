@@ -1,4 +1,4 @@
-const eqArrays = function (actual, expected) {
+const assertArraysEqual = function (actual, expected) {
     if (actual.length) {
         for (var i = 0; i < actual.length; i++) {
             if (actual[i] !== expected[i]) {
@@ -12,6 +12,6 @@ const eqArrays = function (actual, expected) {
     return actual === expected;
 };
 
-console.log(eqArrays(['Lighthouse', 'Labs'], ['Bootcamp']));
+console.log(assertArraysEqual(['Lighthouse', 'Labs'], ['Bootcamp']));
 
-console.log(eqArrays([1,2,2],[1,2,3]));
+console.log(assertArraysEqual([1,2,2],[1,2,3]));
