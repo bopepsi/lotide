@@ -31,8 +31,8 @@ const abc = { a: "1", b: "2", c: "3" };
 console.log(eqObjects(ab, abc))
 // => false
 
-const cd = { c: "1", d: ["2", 3], o: { name: 'ok' } };
-const dc = { d: ["2", 3], c: "1", o: { name: 'ok' } };
+const cd = { c: "1", d: ["2", 3], o: { name: 'okay' } ,k:1};
+const dc = { d: ["2", 3], c: "1", o: { name: 'okay' } ,k:1};
 console.log(eqObjects(cd, dc))
 // => true
 

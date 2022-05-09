@@ -1,4 +1,4 @@
- const assertEqual = function (actual, expected) {
+const assertEqual = function (actual, expected) {
     // Check arrays, but not when actual is null or undefined
     //  if (actual !== undefined && actual.length) {
     //      for (var i = 0; i < actual.length; i++) {
@@ -14,6 +14,4 @@
     return actual === expected;
 };
 
-// TEST CODE
-console.assert(assertEqual("Lighthouse Labs", "Bootcamp"));
-console.assert(assertEqual(1, 1));
+module.exports = assertEqual;
