@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@bopepsi/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,15 +13,21 @@
     "type": "git",
     "url": "git+https://github.com/bopepsi/lotide.git"
   },
-  "keywords": [],
+  "keywords": ["lodash","array","object"],
   "author": "",
-  "license": "ISC",
+  "license":  "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/bopepsi/lotide/issues"
+    "url": "https://github.com/bopepsi/lotide/issues",
+    "email" : "bopepsi@gmail.com"
   },
   "homepage": "https://github.com/bopepsi/lotide#readme",
   "devDependencies": {
     "chai": "^4.3.6",
     "mocha": "^10.0.0"
+  },
+  "people":{
+    "name" : "Bowen J",
+    "email" : "bopepsi@gmail.com",
+    "url" : "https://github.com/bopepsi/lotide/"
   }
 }
