@@ -25,9 +25,8 @@ This project was created and published by me as part of my learnings at Lighthou
 ## Documentation
 
 The following functions are currently implemented:
-
+```js
 const assertArraysEqual = function (actual, expected) {
-
     let ans = true;
     const helper = (arr1, arr2) => {
         if (arr1.length !== arr2.length) ans = false;
@@ -45,20 +44,9 @@ const assertArraysEqual = function (actual, expected) {
         console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
         return false;
     }
-
 };
 
 const assertEqual = function (actual, expected) {
-    // Check arrays, but not when actual is null or undefined
-    //  if (actual !== undefined && actual.length) {
-    //      for (var i = 0; i < actual.length; i++) {
-    //          if (actual[i] !== expected[i]) {
-    //              console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-    //              return false;
-    //          }
-    //      };
-    //      return true;
-    //  };
     if (actual === expected) console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
     else console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
     return actual === expected;
@@ -224,3 +212,4 @@ const without = (words, filter) => {
         }
     }
 };
+```
