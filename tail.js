@@ -3,6 +3,6 @@ const tail = arr => {
     let result = [...arr].slice(1);
     arr.slice()
     return result;
-}
+};
 
 module.exports = tail;

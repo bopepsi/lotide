@@ -7,7 +7,7 @@ const without = (words, filter) => {
             length = words.length;
         }
     }
-}
+};
 
 module.exports = without;
 

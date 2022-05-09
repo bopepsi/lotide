@@ -11,7 +11,7 @@ const map = (arr, transform) => {
     const results = [];
     arr.forEach(item => results.push(transform(item)));
     return results;
-}
+};
 
 module.exports = map;
 

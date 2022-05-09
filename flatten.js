@@ -5,7 +5,7 @@ const flatten = arr => {
         else ans.push(item);
     }
     return ans;
-}
+};
 
 module.exports = flatten;
 
