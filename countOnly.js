@@ -1,22 +1,5 @@
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const assertEqual = function (actual, expected) {
-    // compare arrays
-    if (actual !== undefined && actual.length) {
-        for (var i = 0; i < actual.length; i++) {
-            if (actual[i] !== expected[i]) {
-                console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-                return false;
-            }
-        };
-        return true;
-    };
-    // compare primitive vals
-    if (actual === expected) console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    else console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-    return actual === expected;
-};
-
 const countOnly = function (allItems, itemsToCount) {
     let temp = {};
     for (var item of allItems) {
@@ -37,9 +20,9 @@ const firstNames = [
     "Joe"
 ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+module.exports = countOnly;
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+// Test Code
+// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
+// console.log(result1);
+

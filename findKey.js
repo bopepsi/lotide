@@ -9,13 +9,16 @@ const findKey = (obj, match) => {
         if (match(obj[key])) return key;
 }
 
-var listing = {
-    "Blue Hill": { stars: 1 },
-    "Akaleri": { stars: 3 },
-    "noma": { stars: 2 },
-    "elBulli": { stars: 3 },
-    "Ora": { stars: 2 },
-    "Akelarre": { stars: 3 }
-};
+module.exports = findKey;
 
-console.log(findKey(listing, x => x.stars === 2));
+// Test Code
+// var listing = {
+//     "Blue Hill": { stars: 1 },
+//     "Akaleri": { stars: 3 },
+//     "noma": { stars: 2 },
+//     "elBulli": { stars: 3 },
+//     "Ora": { stars: 2 },
+//     "Akelarre": { stars: 3 }
+// };
+
+// console.log(findKey(listing, x => x.stars === 2));

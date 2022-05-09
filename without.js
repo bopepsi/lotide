@@ -9,9 +9,12 @@ const without = (words, filter) => {
     }
 }
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouscleare"]); 
-console.log(words);
+module.exports = without;
+
+// Test
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouscleare",'world']); 
+// console.log(words);
 // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 // assertArraysEqual(words, ["hello", "world", "lighthouse"]);

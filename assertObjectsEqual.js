@@ -35,6 +35,9 @@ const assertObjectsEqual = (actual, expected) => {
     return true;
 };
 
-const cd = { c: "1", d: ["2", 3], o: { name: 'ok' } };
-const dc = { d: ["2", 3], c: "1", o: { name: 'ok' } };
-assertObjectsEqual(cd,dc);
+// Test Code
+// const cd = { c: "1", d: ["2", 3], o: { name: 'ok' } };
+// const dc = { d: ["2", 3], c: "1", o: { name: 'ok' } };
+// assertObjectsEqual(cd,dc);
+
+module.exports = assertObjectsEqual;

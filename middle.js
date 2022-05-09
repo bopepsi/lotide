@@ -4,5 +4,4 @@ const middle = array => {
     else return array.slice(Math.floor(array.length / 2-1), Math.ceil(array.length / 2+1));
 };
 
-console.log(middle([1,2,3]))
 module.exports = middle;

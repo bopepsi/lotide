@@ -13,5 +13,9 @@ const map = (arr, transform) => {
     return results;
 }
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+module.exports = map;
+
+
+// Test Code
+// const results1 = map(words, word => word[0]);
+// console.log(results1);

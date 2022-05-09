@@ -1,9 +1,13 @@
 const letterPositions = (sentence = sentence.replace(' ', '')) => {
     const results = {};
     for (var i = 0; i < sentence.length; i++) {
-        results[sentence[i]] = results[sentence[i]] ? results[sentence[i]].push(i):[i];
+        if (results[sentence[i]]) results[sentence[i]].push(i);
+        else results[sentence[i]] = [i];
     }
     return results;
 };
 
-console.log(letterPositions('hello'));
+module.exports = letterPositions;
+
+// Test
+// console.log(letterPositions('hello'));
