@@ -12,6 +12,4 @@ const assertArraysEqual = function (actual, expected) {
     return actual === expected;
 };
 
-console.log(assertArraysEqual(['Lighthouse', 'Labs'], ['Bootcamp']));
-
-console.log(assertArraysEqual([1,2,2],[1,2,3]));
+module.exports = assertArraysEqual;
